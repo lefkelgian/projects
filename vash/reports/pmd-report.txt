@@ -1,0 +1,742 @@
+src/vash/Admin.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Admin.java:11:	Avoid unused imports such as 'javax.swing.JSpinner'
+src/vash/Admin.java:17:	headerCommentRequirement Required
+src/vash/Admin.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:19:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Admin.java:19:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:19:	fieldCommentRequirement Required
+src/vash/Admin.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:20:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:20:	fieldCommentRequirement Required
+src/vash/Admin.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:21:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_7' is not final.
+src/vash/Admin.java:21:	Private field 'textField_7' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:21:	fieldCommentRequirement Required
+src/vash/Admin.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:22:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_8' is not final.
+src/vash/Admin.java:22:	Private field 'textField_8' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:22:	fieldCommentRequirement Required
+src/vash/Admin.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:23:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_1' is not final.
+src/vash/Admin.java:23:	Private field 'textField_1' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:23:	fieldCommentRequirement Required
+src/vash/Admin.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Admin.java:24:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_2' is not final.
+src/vash/Admin.java:24:	Private field 'textField_2' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Admin.java:24:	fieldCommentRequirement Required
+src/vash/Admin.java:29:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Admin.java:29:	Parameter 'args' is not assigned and could be declared final
+src/vash/Admin.java:30:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Admin.java:31:	publicMethodCommentRequirement Required
+src/vash/Admin.java:33:	Local variable 'frame' could be declared final
+src/vash/Admin.java:35:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Admin.java:36:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Admin.java:45:	It is a good practice to call super() in a constructor
+src/vash/Admin.java:53:	Local variable 'lblEnterOffer' could be declared final
+src/vash/Admin.java:54:	The String literal "Tahoma" appears 16 times in this file; the first occurrence is on line 54
+src/vash/Admin.java:64:	Local variable 'lblSelectFromDate' could be declared final
+src/vash/Admin.java:69:	Local variable 'lblDay' could be declared final
+src/vash/Admin.java:74:	Local variable 'lblMonth' could be declared final
+src/vash/Admin.java:79:	Local variable 'lblYear' could be declared final
+src/vash/Admin.java:84:	Local variable 'lblSelectToDate' could be declared final
+src/vash/Admin.java:89:	Local variable 'label_1' could be declared final
+src/vash/Admin.java:89:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/vash/Admin.java:94:	Local variable 'label_2' could be declared final
+src/vash/Admin.java:94:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/vash/Admin.java:99:	Local variable 'label_3' could be declared final
+src/vash/Admin.java:99:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/vash/Admin.java:104:	Local variable 'lblEnterPrice' could be declared final
+src/vash/Admin.java:109:	Local variable 'btnNewButton' could be declared final
+src/vash/Admin.java:111:	Avoid variables with short names like e
+src/vash/Admin.java:111:	Parameter 'e' is not assigned and could be declared final
+src/vash/Admin.java:111:	publicMethodCommentRequirement Required
+src/vash/Admin.java:115:	Local variable 'myDriver' could be declared final
+src/vash/Admin.java:116:	Local variable 'myUrl' could be declared final
+src/vash/Admin.java:118:	Ensure that resources like this Connection object are closed after use
+src/vash/Admin.java:118:	Local variable 'conn' could be declared final
+src/vash/Admin.java:121:	Local variable 'query' could be declared final
+src/vash/Admin.java:122:	Local variable 'preparedStmt' could be declared final
+src/vash/Admin.java:122:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:123:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:124:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:132:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Admin.java:134:	System.err.println is used
+src/vash/Admin.java:135:	System.err.println is used
+src/vash/Admin.java:143:	Local variable 'btnNewButton_1' could be declared final
+src/vash/Admin.java:143:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'btnNewButton_1' is not final.
+src/vash/Admin.java:145:	Avoid variables with short names like e
+src/vash/Admin.java:145:	Parameter 'e' is not assigned and could be declared final
+src/vash/Admin.java:145:	publicMethodCommentRequirement Required
+src/vash/Admin.java:149:	Local variable 'myDriver' could be declared final
+src/vash/Admin.java:150:	Local variable 'myUrl' could be declared final
+src/vash/Admin.java:152:	Ensure that resources like this Connection object are closed after use
+src/vash/Admin.java:152:	Local variable 'conn' could be declared final
+src/vash/Admin.java:155:	Local variable 'query' could be declared final
+src/vash/Admin.java:156:	Local variable 'preparedStmt' could be declared final
+src/vash/Admin.java:156:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Admin.java:166:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Admin.java:168:	System.err.println is used
+src/vash/Admin.java:169:	System.err.println is used
+src/vash/Admin.java:179:	Local variable 'btnNewButton_2' could be declared final
+src/vash/Admin.java:179:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'btnNewButton_2' is not final.
+src/vash/Admin.java:181:	Avoid variables with short names like e
+src/vash/Admin.java:181:	Parameter 'e' is not assigned and could be declared final
+src/vash/Admin.java:181:	publicMethodCommentRequirement Required
+src/vash/Admin.java:182:	System.out.println is used
+src/vash/Admin.java:183:	Avoid variables with short names like a
+src/vash/Admin.java:183:	Local variable 'a' could be declared final
+src/vash/Admin.java:193:	Local variable 'btnLogOut' could be declared final
+src/vash/Admin.java:195:	Avoid variables with short names like e
+src/vash/Admin.java:195:	Parameter 'e' is not assigned and could be declared final
+src/vash/Admin.java:195:	publicMethodCommentRequirement Required
+src/vash/Admin.java:196:	System.out.println is used
+src/vash/Admin.java:197:	Avoid variables with short names like a
+src/vash/Admin.java:197:	Local variable 'a' could be declared final
+src/vash/Admin.java:223:	Local variable 'label' could be declared final
+src/vash/Available.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Available.java:11:	Avoid unused imports such as 'javax.swing.JSpinner'
+src/vash/Available.java:15:	Avoid unused imports such as 'javax.swing.border.LineBorder'
+src/vash/Available.java:16:	Avoid unused imports such as 'java.awt.Color'
+src/vash/Available.java:20:	Avoid unused imports such as 'javax.swing.JTextField'
+src/vash/Available.java:22:	headerCommentRequirement Required
+src/vash/Available.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Available.java:24:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Available.java:24:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Available.java:24:	fieldCommentRequirement Required
+src/vash/Available.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Available.java:25:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Available.java:25:	fieldCommentRequirement Required
+src/vash/Available.java:30:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Available.java:30:	Parameter 'args' is not assigned and could be declared final
+src/vash/Available.java:31:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Available.java:32:	publicMethodCommentRequirement Required
+src/vash/Available.java:34:	Local variable 'frame' could be declared final
+src/vash/Available.java:36:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Available.java:37:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Available.java:46:	It is a good practice to call super() in a constructor
+src/vash/Available.java:54:	Local variable 'lblAvailableRooms' could be declared final
+src/vash/Available.java:59:	Local variable 'btnLogOut' could be declared final
+src/vash/Available.java:61:	Avoid variables with short names like e
+src/vash/Available.java:61:	Parameter 'e' is not assigned and could be declared final
+src/vash/Available.java:61:	publicMethodCommentRequirement Required
+src/vash/Available.java:69:	Local variable 'scrollPane' could be declared final
+src/vash/Available.java:95:	Local variable 'url' could be declared final
+src/vash/Available.java:96:	Local variable 'name' could be declared final
+src/vash/Available.java:97:	Local variable 'password' could be declared final
+src/vash/Available.java:99:	Ensure that resources like this java.sql.Connection object are closed after use
+src/vash/Available.java:99:	Local variable 'con' could be declared final
+src/vash/Available.java:99:	Unnecessary use of fully qualified name 'java.sql.Connection' due to existing import 'java.sql.*'
+src/vash/Available.java:100:	Ensure that resources like this java.sql.Statement object are closed after use
+src/vash/Available.java:100:	Found 'DD'-anomaly for variable 'stmts' (lines '100'-'102').
+src/vash/Available.java:100:	Unnecessary use of fully qualified name 'java.sql.Statement' due to existing import 'java.sql.*'
+src/vash/Available.java:101:	Local variable 'query' could be declared final
+src/vash/Available.java:103:	Avoid variables with short names like rs
+src/vash/Available.java:103:	Ensure that resources like this ResultSet object are closed after use
+src/vash/Available.java:103:	Local variable 'rs' could be declared final
+src/vash/Available.java:104:	Found 'DU'-anomaly for variable 'li_row' (lines '104'-'116').
+src/vash/Available.java:104:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'li_row' is not final.
+src/vash/Available.java:109:	Found 'DU'-anomaly for variable 'li_row' (lines '109'-'116').
+src/vash/Available.java:112:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Available.java:115:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Available.java:117:	publicMethodCommentRequirement Required
+src/vash/Login.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Login.java:19:	headerCommentRequirement Required
+src/vash/Login.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Login.java:21:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Login.java:21:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Login.java:21:	fieldCommentRequirement Required
+src/vash/Login.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Login.java:22:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Login.java:22:	fieldCommentRequirement Required
+src/vash/Login.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Login.java:23:	Private field 'passwordField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Login.java:23:	fieldCommentRequirement Required
+src/vash/Login.java:28:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Login.java:28:	Parameter 'args' is not assigned and could be declared final
+src/vash/Login.java:29:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Login.java:30:	publicMethodCommentRequirement Required
+src/vash/Login.java:32:	Local variable 'frame' could be declared final
+src/vash/Login.java:34:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Login.java:35:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Login.java:44:	It is a good practice to call super() in a constructor
+src/vash/Login.java:52:	Local variable 'btnLogin' could be declared final
+src/vash/Login.java:56:	Avoid variables with short names like e
+src/vash/Login.java:56:	Parameter 'e' is not assigned and could be declared final
+src/vash/Login.java:56:	publicMethodCommentRequirement Required
+src/vash/Login.java:58:	Ensure that resources like this Connection object are closed after use
+src/vash/Login.java:58:	Found 'DD'-anomaly for variable 'conn' (lines '58'-'62').
+src/vash/Login.java:58:	Found 'DD'-anomaly for variable 'conn' (lines '58'-'62').
+src/vash/Login.java:59:	Avoid variables with short names like ps
+src/vash/Login.java:66:	System.out.println is used
+src/vash/Login.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:68:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:69:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:70:	Ensure that resources like this ResultSet object are closed after use
+src/vash/Login.java:70:	Local variable 'result' could be declared final
+src/vash/Login.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:72:	System.out.println is used
+src/vash/Login.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:73:	This statement may have some unnecessary parentheses
+src/vash/Login.java:73:	Useless parentheses.
+src/vash/Login.java:73:	Useless parentheses.
+src/vash/Login.java:74:	System.out.println is used
+src/vash/Login.java:75:	Avoid variables with short names like a
+src/vash/Login.java:75:	Local variable 'a' could be declared final
+src/vash/Login.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:81:	This statement may have some unnecessary parentheses
+src/vash/Login.java:81:	Useless parentheses.
+src/vash/Login.java:81:	Useless parentheses.
+src/vash/Login.java:83:	System.out.println is used
+src/vash/Login.java:84:	Avoid variables with short names like a
+src/vash/Login.java:84:	Local variable 'a' could be declared final
+src/vash/Login.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:97:	System.out.println is used
+src/vash/Login.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:98:	System.out.println is used
+src/vash/Login.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Login.java:99:	System.out.println is used
+src/vash/Login.java:113:	Local variable 'lblUsername' could be declared final
+src/vash/Login.java:118:	Local variable 'lblPassword' could be declared final
+src/vash/Login.java:123:	Local variable 'lblLogIn' could be declared final
+src/vash/Login.java:128:	Avoid excessively long variable names like btnMakeReservation
+src/vash/Login.java:128:	Local variable 'btnMakeReservation' could be declared final
+src/vash/Login.java:130:	Parameter 'arg0' is not assigned and could be declared final
+src/vash/Login.java:130:	publicMethodCommentRequirement Required
+src/vash/Login.java:131:	System.out.println is used
+src/vash/Login.java:132:	Avoid variables with short names like a
+src/vash/Login.java:132:	Local variable 'a' could be declared final
+src/vash/Print.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Print.java:17:	headerCommentRequirement Required
+src/vash/Print.java:18:	Avoid variables with short names like Sb
+src/vash/Print.java:18:	Use explicit scoping instead of the default package private level
+src/vash/Print.java:18:	Variables should start with a lowercase character, 'Sb' starts with uppercase character.
+src/vash/Print.java:18:	fieldCommentRequirement Required
+src/vash/Print.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Print.java:20:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Print.java:20:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Print.java:20:	fieldCommentRequirement Required
+src/vash/Print.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Print.java:21:	Perhaps 'table' could be replaced by a local variable.
+src/vash/Print.java:21:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Print.java:21:	fieldCommentRequirement Required
+src/vash/Print.java:25:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Print.java:25:	Parameter 'args' is not assigned and could be declared final
+src/vash/Print.java:26:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Print.java:27:	Document empty method body
+src/vash/Print.java:27:	publicMethodCommentRequirement Required
+src/vash/Print.java:34:	It is a good practice to call super() in a constructor
+src/vash/Print.java:34:	Parameter 'pName' is not assigned and could be declared final
+src/vash/Print.java:35:	Local variable 'Name' could be declared final
+src/vash/Print.java:35:	Variables should start with a lowercase character, 'Name' starts with uppercase character.
+src/vash/Print.java:43:	Local variable 'scrollPane' could be declared final
+src/vash/Print.java:58:	Local variable 'btnOk' could be declared final
+src/vash/Print.java:60:	Avoid variables with short names like e
+src/vash/Print.java:60:	Parameter 'e' is not assigned and could be declared final
+src/vash/Print.java:60:	publicMethodCommentRequirement Required
+src/vash/Print.java:67:	Ensure that resources like this Connection object are closed after use
+src/vash/Print.java:67:	Found 'DD'-anomaly for variable 'conn' (lines '67'-'70').
+src/vash/Print.java:68:	Avoid variables with short names like ps
+src/vash/Print.java:74:	Ensure that resources like this ResultSet object are closed after use
+src/vash/Print.java:74:	Local variable 'result' could be declared final
+src/vash/Print.java:75:	Found 'DU'-anomaly for variable 'li_row' (lines '75'-'87').
+src/vash/Print.java:75:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'li_row' is not final.
+src/vash/Print.java:82:	Found 'DU'-anomaly for variable 'li_row' (lines '82'-'87').
+src/vash/Print.java:85:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Reservation.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Reservation.java:14:	Avoid unused imports such as 'javax.swing.JSpinner'
+src/vash/Reservation.java:20:	Avoid unused imports such as 'javax.swing.JCheckBox'
+src/vash/Reservation.java:25:	The class 'Reservation' has a Cyclomatic Complexity of 8 (Highest = 12).
+src/vash/Reservation.java:25:	The class 'Reservation' has a Modified Cyclomatic Complexity of 8 (Highest = 12).
+src/vash/Reservation.java:25:	The class 'Reservation' has a Standard Cyclomatic Complexity of 8 (Highest = 12).
+src/vash/Reservation.java:25:	headerCommentRequirement Required
+src/vash/Reservation.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:27:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Reservation.java:27:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:27:	fieldCommentRequirement Required
+src/vash/Reservation.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:28:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:28:	fieldCommentRequirement Required
+src/vash/Reservation.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:29:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_1' is not final.
+src/vash/Reservation.java:29:	Private field 'textField_1' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:29:	fieldCommentRequirement Required
+src/vash/Reservation.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:30:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_2' is not final.
+src/vash/Reservation.java:30:	Private field 'textField_2' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:30:	fieldCommentRequirement Required
+src/vash/Reservation.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:31:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_3' is not final.
+src/vash/Reservation.java:31:	Private field 'textField_3' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:31:	fieldCommentRequirement Required
+src/vash/Reservation.java:32:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Reservation.java:32:	Perhaps 'table' could be replaced by a local variable.
+src/vash/Reservation.java:32:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Reservation.java:32:	fieldCommentRequirement Required
+src/vash/Reservation.java:37:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Reservation.java:37:	Parameter 'args' is not assigned and could be declared final
+src/vash/Reservation.java:38:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Reservation.java:39:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:41:	Local variable 'frame' could be declared final
+src/vash/Reservation.java:43:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Reservation.java:44:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Reservation.java:53:	It is a good practice to call super() in a constructor
+src/vash/Reservation.java:53:	The constructor 'Reservation' has a Cyclomatic Complexity of 12.
+src/vash/Reservation.java:53:	The constructor 'Reservation' has a Modified Cyclomatic Complexity of 12.
+src/vash/Reservation.java:53:	The constructor 'Reservation' has a Standard Cyclomatic Complexity of 12.
+src/vash/Reservation.java:53:	The constructor with 0 parameters has an NCSS line count of 118
+src/vash/Reservation.java:62:	Local variable 'lblNewLabel' could be declared final
+src/vash/Reservation.java:63:	The String literal "Tahoma" appears 17 times in this file; the first occurrence is on line 63
+src/vash/Reservation.java:67:	Local variable 'lblbed' could be declared final
+src/vash/Reservation.java:72:	Local variable 'lblbed_1' could be declared final
+src/vash/Reservation.java:72:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblbed_1' is not final.
+src/vash/Reservation.java:77:	Local variable 'lblbed_2' could be declared final
+src/vash/Reservation.java:77:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblbed_2' is not final.
+src/vash/Reservation.java:82:	Local variable 'lblType' could be declared final
+src/vash/Reservation.java:87:	Local variable 'label' could be declared final
+src/vash/Reservation.java:92:	Local variable 'label_1' could be declared final
+src/vash/Reservation.java:92:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/vash/Reservation.java:97:	Local variable 'label_2' could be declared final
+src/vash/Reservation.java:97:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/vash/Reservation.java:102:	Local variable 'label_3' could be declared final
+src/vash/Reservation.java:102:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/vash/Reservation.java:107:	Local variable 'label_4' could be declared final
+src/vash/Reservation.java:107:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_4' is not final.
+src/vash/Reservation.java:112:	Local variable 'label_5' could be declared final
+src/vash/Reservation.java:112:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_5' is not final.
+src/vash/Reservation.java:117:	Local variable 'label_6' could be declared final
+src/vash/Reservation.java:117:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_6' is not final.
+src/vash/Reservation.java:122:	Local variable 'label_7' could be declared final
+src/vash/Reservation.java:122:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_7' is not final.
+src/vash/Reservation.java:127:	Avoid excessively long variable names like btnMakeReservation
+src/vash/Reservation.java:127:	Local variable 'btnMakeReservation' could be declared final
+src/vash/Reservation.java:129:	Avoid variables with short names like e
+src/vash/Reservation.java:129:	Parameter 'e' is not assigned and could be declared final
+src/vash/Reservation.java:129:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:133:	Local variable 'myDriver' could be declared final
+src/vash/Reservation.java:134:	Local variable 'myUrl' could be declared final
+src/vash/Reservation.java:136:	Ensure that resources like this Connection object are closed after use
+src/vash/Reservation.java:136:	Local variable 'conn' could be declared final
+src/vash/Reservation.java:137:	Local variable 'query' could be declared final
+src/vash/Reservation.java:138:	Local variable 'preparedStmt' could be declared final
+src/vash/Reservation.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:139:	Ensure that resources like this ResultSet object are closed after use
+src/vash/Reservation.java:139:	Local variable 'result' could be declared final
+src/vash/Reservation.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:141:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:142:	Found 'DU'-anomaly for variable 'bed_1' (lines '142'-'304').
+src/vash/Reservation.java:142:	Found 'DU'-anomaly for variable 'bed_1' (lines '142'-'304').
+src/vash/Reservation.java:142:	Found 'DU'-anomaly for variable 'bed_1' (lines '142'-'304').
+src/vash/Reservation.java:142:	Found 'DU'-anomaly for variable 'bed_1' (lines '142'-'304').
+src/vash/Reservation.java:142:	Found 'DU'-anomaly for variable 'bed_1' (lines '142'-'304').
+src/vash/Reservation.java:142:	Local variable 'bed_1' could be declared final
+src/vash/Reservation.java:142:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'bed_1' is not final.
+src/vash/Reservation.java:143:	Found 'DU'-anomaly for variable 'bed_2' (lines '143'-'304').
+src/vash/Reservation.java:143:	Found 'DU'-anomaly for variable 'bed_2' (lines '143'-'304').
+src/vash/Reservation.java:143:	Found 'DU'-anomaly for variable 'bed_2' (lines '143'-'304').
+src/vash/Reservation.java:143:	Found 'DU'-anomaly for variable 'bed_2' (lines '143'-'304').
+src/vash/Reservation.java:143:	Found 'DU'-anomaly for variable 'bed_2' (lines '143'-'304').
+src/vash/Reservation.java:143:	Local variable 'bed_2' could be declared final
+src/vash/Reservation.java:143:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'bed_2' is not final.
+src/vash/Reservation.java:144:	Found 'DU'-anomaly for variable 'bed_4' (lines '144'-'304').
+src/vash/Reservation.java:144:	Found 'DU'-anomaly for variable 'bed_4' (lines '144'-'304').
+src/vash/Reservation.java:144:	Found 'DU'-anomaly for variable 'bed_4' (lines '144'-'304').
+src/vash/Reservation.java:144:	Found 'DU'-anomaly for variable 'bed_4' (lines '144'-'304').
+src/vash/Reservation.java:144:	Found 'DU'-anomaly for variable 'bed_4' (lines '144'-'304').
+src/vash/Reservation.java:144:	Local variable 'bed_4' could be declared final
+src/vash/Reservation.java:144:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'bed_4' is not final.
+src/vash/Reservation.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:145:	This statement may have some unnecessary parentheses
+src/vash/Reservation.java:145:	Useless parentheses.
+src/vash/Reservation.java:145:	Useless parentheses.
+src/vash/Reservation.java:148:	Local variable 'query1' could be declared final
+src/vash/Reservation.java:149:	Local variable 'preparedStmt1' could be declared final
+src/vash/Reservation.java:149:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:150:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/vash/Reservation.java:156:	This statement may have some unnecessary parentheses
+src/vash/Reservation.java:156:	Useless parentheses.
+src/vash/Reservation.java:156:	Useless parentheses.
+src/vash/Reservation.java:158:	Local variable 'query2' could be declared final
+src/vash/Reservation.java:159:	Local variable 'preparedStmt2' could be declared final
+src/vash/Reservation.java:159:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:160:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:162:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:165:	Potential violation of Law of Demeter (method chain calls)
+src/vash/Reservation.java:165:	This statement may have some unnecessary parentheses
+src/vash/Reservation.java:165:	Useless parentheses.
+src/vash/Reservation.java:165:	Useless parentheses.
+src/vash/Reservation.java:167:	Local variable 'query2' could be declared final
+src/vash/Reservation.java:168:	Local variable 'preparedStmt2' could be declared final
+src/vash/Reservation.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:169:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:170:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:171:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:174:	Potential violation of Law of Demeter (method chain calls)
+src/vash/Reservation.java:174:	This statement may have some unnecessary parentheses
+src/vash/Reservation.java:174:	Useless parentheses.
+src/vash/Reservation.java:174:	Useless parentheses.
+src/vash/Reservation.java:175:	System.out.println is used
+src/vash/Reservation.java:176:	Local variable 'query2' could be declared final
+src/vash/Reservation.java:177:	Local variable 'preparedStmt2' could be declared final
+src/vash/Reservation.java:177:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:178:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:179:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:180:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:188:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Reservation.java:190:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Reservation.java:192:	System.err.println is used
+src/vash/Reservation.java:193:	System.err.println is used
+src/vash/Reservation.java:203:	Local variable 'btnPrint' could be declared final
+src/vash/Reservation.java:205:	Avoid variables with short names like e
+src/vash/Reservation.java:205:	Parameter 'e' is not assigned and could be declared final
+src/vash/Reservation.java:205:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:206:	Local variable 'Name' could be declared final
+src/vash/Reservation.java:206:	Variables should start with a lowercase character, 'Name' starts with uppercase character.
+src/vash/Reservation.java:207:	Avoid variables with short names like SB
+src/vash/Reservation.java:207:	Local variable 'SB' could be declared final
+src/vash/Reservation.java:207:	Variables should start with a lowercase character, 'SB' starts with uppercase character.
+src/vash/Reservation.java:215:	Local variable 'btnBack' could be declared final
+src/vash/Reservation.java:217:	Avoid variables with short names like e
+src/vash/Reservation.java:217:	Parameter 'e' is not assigned and could be declared final
+src/vash/Reservation.java:217:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:228:	Local variable 'lblPaymentMode' could be declared final
+src/vash/Reservation.java:233:	Local variable 'comboBox' could be declared final
+src/vash/Reservation.java:239:	Local variable 'btnAvailableRooms' could be declared final
+src/vash/Reservation.java:241:	Avoid variables with short names like e
+src/vash/Reservation.java:241:	Parameter 'e' is not assigned and could be declared final
+src/vash/Reservation.java:241:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:242:	System.out.println is used
+src/vash/Reservation.java:243:	Avoid variables with short names like a
+src/vash/Reservation.java:243:	Local variable 'a' could be declared final
+src/vash/Reservation.java:249:	Local variable 'button' could be declared final
+src/vash/Reservation.java:251:	Avoid variables with short names like e
+src/vash/Reservation.java:251:	Parameter 'e' is not assigned and could be declared final
+src/vash/Reservation.java:251:	publicMethodCommentRequirement Required
+src/vash/Reservation.java:252:	Avoid variables with short names like a
+src/vash/Reservation.java:252:	Local variable 'a' could be declared final
+src/vash/Reservation.java:275:	Local variable 'label_8' could be declared final
+src/vash/Reservation.java:275:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_8' is not final.
+src/vash/Reservation.java:285:	Local variable 'scrollPane' could be declared final
+src/vash/Reservation.java:300:	Local variable 'lblPrices' could be declared final
+src/vash/Statistics.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Statistics.java:10:	Avoid unused imports such as 'javax.swing.JTextPane'
+src/vash/Statistics.java:11:	Avoid unused imports such as 'javax.swing.JTextArea'
+src/vash/Statistics.java:20:	headerCommentRequirement Required
+src/vash/Statistics.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:22:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Statistics.java:22:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:22:	fieldCommentRequirement Required
+src/vash/Statistics.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:23:	Perhaps 'textField' could be replaced by a local variable.
+src/vash/Statistics.java:23:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:23:	fieldCommentRequirement Required
+src/vash/Statistics.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:24:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_1' is not final.
+src/vash/Statistics.java:24:	Perhaps 'textField_1' could be replaced by a local variable.
+src/vash/Statistics.java:24:	Private field 'textField_1' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:24:	fieldCommentRequirement Required
+src/vash/Statistics.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:25:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_2' is not final.
+src/vash/Statistics.java:25:	Perhaps 'textField_2' could be replaced by a local variable.
+src/vash/Statistics.java:25:	Private field 'textField_2' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:25:	fieldCommentRequirement Required
+src/vash/Statistics.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:26:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_3' is not final.
+src/vash/Statistics.java:26:	Perhaps 'textField_3' could be replaced by a local variable.
+src/vash/Statistics.java:26:	Private field 'textField_3' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:26:	fieldCommentRequirement Required
+src/vash/Statistics.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:27:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_4' is not final.
+src/vash/Statistics.java:27:	Perhaps 'textField_4' could be replaced by a local variable.
+src/vash/Statistics.java:27:	Private field 'textField_4' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:27:	fieldCommentRequirement Required
+src/vash/Statistics.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:28:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_5' is not final.
+src/vash/Statistics.java:28:	Perhaps 'textField_5' could be replaced by a local variable.
+src/vash/Statistics.java:28:	Private field 'textField_5' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:28:	fieldCommentRequirement Required
+src/vash/Statistics.java:29:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Statistics.java:29:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_6' is not final.
+src/vash/Statistics.java:29:	Perhaps 'textField_6' could be replaced by a local variable.
+src/vash/Statistics.java:29:	Private field 'textField_6' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Statistics.java:29:	fieldCommentRequirement Required
+src/vash/Statistics.java:34:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Statistics.java:34:	Parameter 'args' is not assigned and could be declared final
+src/vash/Statistics.java:35:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Statistics.java:36:	publicMethodCommentRequirement Required
+src/vash/Statistics.java:38:	Local variable 'frame' could be declared final
+src/vash/Statistics.java:40:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Statistics.java:41:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Statistics.java:50:	It is a good practice to call super() in a constructor
+src/vash/Statistics.java:50:	The constructor with 0 parameters has an NCSS line count of 104
+src/vash/Statistics.java:58:	Local variable 'comboBox' could be declared final
+src/vash/Statistics.java:60:	The String literal "Tahoma" appears 20 times in this file; the first occurrence is on line 60
+src/vash/Statistics.java:64:	Local variable 'lblSelectMonth' could be declared final
+src/vash/Statistics.java:69:	Local variable 'lblNewLabel' could be declared final
+src/vash/Statistics.java:74:	Local variable 'lblNewLabel_1' could be declared final
+src/vash/Statistics.java:74:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_1' is not final.
+src/vash/Statistics.java:79:	Local variable 'lblNewLabel_2' could be declared final
+src/vash/Statistics.java:79:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_2' is not final.
+src/vash/Statistics.java:84:	Local variable 'lblNewLabel_3' could be declared final
+src/vash/Statistics.java:84:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_3' is not final.
+src/vash/Statistics.java:107:	Local variable 'lblNewLabel_4' could be declared final
+src/vash/Statistics.java:107:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_4' is not final.
+src/vash/Statistics.java:118:	Local variable 'lblNewLabel_5' could be declared final
+src/vash/Statistics.java:118:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_5' is not final.
+src/vash/Statistics.java:123:	Local variable 'lblNewLabel_6' could be declared final
+src/vash/Statistics.java:123:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_6' is not final.
+src/vash/Statistics.java:128:	Local variable 'lblNewLabel_7' could be declared final
+src/vash/Statistics.java:128:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'lblNewLabel_7' is not final.
+src/vash/Statistics.java:145:	Local variable 'comboBox_1' could be declared final
+src/vash/Statistics.java:145:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'comboBox_1' is not final.
+src/vash/Statistics.java:151:	Local variable 'lblSelectWeek' could be declared final
+src/vash/Statistics.java:156:	Local variable 'lblProfit' could be declared final
+src/vash/Statistics.java:167:	Local variable 'btnNewButton_1' could be declared final
+src/vash/Statistics.java:167:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'btnNewButton_1' is not final.
+src/vash/Statistics.java:169:	Avoid variables with short names like e
+src/vash/Statistics.java:169:	Parameter 'e' is not assigned and could be declared final
+src/vash/Statistics.java:169:	publicMethodCommentRequirement Required
+src/vash/Statistics.java:170:	System.out.println is used
+src/vash/Statistics.java:171:	Avoid variables with short names like a
+src/vash/Statistics.java:171:	Local variable 'a' could be declared final
+src/vash/Statistics.java:180:	Local variable 'btnNewButton' could be declared final
+src/vash/Statistics.java:182:	Avoid variables with short names like e
+src/vash/Statistics.java:182:	Parameter 'e' is not assigned and could be declared final
+src/vash/Statistics.java:182:	publicMethodCommentRequirement Required
+src/vash/Statistics.java:183:	System.out.println is used
+src/vash/Statistics.java:184:	Avoid variables with short names like a
+src/vash/Statistics.java:184:	Local variable 'a' could be declared final
+src/vash/Worker.java:2:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/Worker.java:12:	Avoid unused imports such as 'javax.swing.JSpinner'
+src/vash/Worker.java:18:	The class 'Worker' has a Cyclomatic Complexity of 8 (Highest = 11).
+src/vash/Worker.java:18:	The class 'Worker' has a Modified Cyclomatic Complexity of 8 (Highest = 11).
+src/vash/Worker.java:18:	The class 'Worker' has a Standard Cyclomatic Complexity of 8 (Highest = 11).
+src/vash/Worker.java:18:	headerCommentRequirement Required
+src/vash/Worker.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:20:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/Worker.java:20:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:20:	fieldCommentRequirement Required
+src/vash/Worker.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:21:	Private field 'textField' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:21:	fieldCommentRequirement Required
+src/vash/Worker.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:22:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_1' is not final.
+src/vash/Worker.java:22:	Private field 'textField_1' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:22:	fieldCommentRequirement Required
+src/vash/Worker.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:23:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_2' is not final.
+src/vash/Worker.java:23:	Private field 'textField_2' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:23:	fieldCommentRequirement Required
+src/vash/Worker.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:24:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_4' is not final.
+src/vash/Worker.java:24:	Private field 'textField_4' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:24:	fieldCommentRequirement Required
+src/vash/Worker.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/Worker.java:25:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'textField_3' is not final.
+src/vash/Worker.java:25:	Private field 'textField_3' could be made final; it is only initialized in the declaration or constructor.
+src/vash/Worker.java:25:	fieldCommentRequirement Required
+src/vash/Worker.java:30:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/Worker.java:30:	Parameter 'args' is not assigned and could be declared final
+src/vash/Worker.java:31:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/Worker.java:32:	publicMethodCommentRequirement Required
+src/vash/Worker.java:34:	Local variable 'frame' could be declared final
+src/vash/Worker.java:36:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Worker.java:37:	Avoid printStackTrace(); use a logger call instead.
+src/vash/Worker.java:46:	It is a good practice to call super() in a constructor
+src/vash/Worker.java:46:	The constructor 'Worker' has a Cyclomatic Complexity of 11.
+src/vash/Worker.java:46:	The constructor 'Worker' has a Modified Cyclomatic Complexity of 11.
+src/vash/Worker.java:46:	The constructor 'Worker' has a Standard Cyclomatic Complexity of 11.
+src/vash/Worker.java:46:	The constructor with 0 parameters has an NCSS line count of 133
+src/vash/Worker.java:54:	Local variable 'btnCheckForRooms' could be declared final
+src/vash/Worker.java:56:	Avoid variables with short names like e
+src/vash/Worker.java:56:	Parameter 'e' is not assigned and could be declared final
+src/vash/Worker.java:56:	publicMethodCommentRequirement Required
+src/vash/Worker.java:57:	System.out.println is used
+src/vash/Worker.java:58:	Avoid variables with short names like a
+src/vash/Worker.java:58:	Local variable 'a' could be declared final
+src/vash/Worker.java:64:	The String literal "Tahoma" appears 24 times in this file; the first occurrence is on line 64
+src/vash/Worker.java:68:	Local variable 'btnReserveRooms' could be declared final
+src/vash/Worker.java:70:	Parameter 'arg0' is not assigned and could be declared final
+src/vash/Worker.java:70:	publicMethodCommentRequirement Required
+src/vash/Worker.java:71:	System.out.println is used
+src/vash/Worker.java:72:	Avoid variables with short names like a
+src/vash/Worker.java:72:	Local variable 'a' could be declared final
+src/vash/Worker.java:82:	Local variable 'btnLogOut' could be declared final
+src/vash/Worker.java:84:	Avoid variables with short names like e
+src/vash/Worker.java:84:	Parameter 'e' is not assigned and could be declared final
+src/vash/Worker.java:84:	publicMethodCommentRequirement Required
+src/vash/Worker.java:85:	System.out.println is used
+src/vash/Worker.java:86:	Avoid variables with short names like a
+src/vash/Worker.java:86:	Local variable 'a' could be declared final
+src/vash/Worker.java:95:	Avoid excessively long variable names like lblEnterNameReservation
+src/vash/Worker.java:95:	Local variable 'lblEnterNameReservation' could be declared final
+src/vash/Worker.java:100:	Local variable 'lblEnterRoom' could be declared final
+src/vash/Worker.java:105:	Local variable 'comboBox' could be declared final
+src/vash/Worker.java:117:	Local variable 'btnNewButton' could be declared final
+src/vash/Worker.java:119:	Parameter 'arg0' is not assigned and could be declared final
+src/vash/Worker.java:119:	publicMethodCommentRequirement Required
+src/vash/Worker.java:122:	Ensure that resources like this Connection object are closed after use
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:122:	Found 'DD'-anomaly for variable 'conn' (lines '122'-'125').
+src/vash/Worker.java:123:	Avoid variables with short names like ps
+src/vash/Worker.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:133:	System.out.println is used
+src/vash/Worker.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:134:	System.out.println is used
+src/vash/Worker.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:135:	System.out.println is used
+src/vash/Worker.java:143:	Local variable 'btnEndReservation' could be declared final
+src/vash/Worker.java:145:	Avoid variables with short names like e
+src/vash/Worker.java:145:	Parameter 'e' is not assigned and could be declared final
+src/vash/Worker.java:145:	publicMethodCommentRequirement Required
+src/vash/Worker.java:149:	Local variable 'myDriver' could be declared final
+src/vash/Worker.java:150:	Local variable 'myUrl' could be declared final
+src/vash/Worker.java:152:	Ensure that resources like this Connection object are closed after use
+src/vash/Worker.java:152:	Local variable 'conn' could be declared final
+src/vash/Worker.java:153:	Local variable 'query' could be declared final
+src/vash/Worker.java:154:	Local variable 'preparedStmt' could be declared final
+src/vash/Worker.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:156:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:159:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/Worker.java:161:	System.err.println is used
+src/vash/Worker.java:162:	System.err.println is used
+src/vash/Worker.java:170:	Local variable 'btnOk' could be declared final
+src/vash/Worker.java:172:	Parameter 'arg0' is not assigned and could be declared final
+src/vash/Worker.java:172:	publicMethodCommentRequirement Required
+src/vash/Worker.java:174:	Ensure that resources like this Connection object are closed after use
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:174:	Found 'DD'-anomaly for variable 'conn' (lines '174'-'177').
+src/vash/Worker.java:175:	Avoid variables with short names like ps
+src/vash/Worker.java:179:	System.out.println is used
+src/vash/Worker.java:180:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:182:	Ensure that resources like this ResultSet object are closed after use
+src/vash/Worker.java:182:	Local variable 'result' could be declared final
+src/vash/Worker.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:183:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:184:	System.out.println is used
+src/vash/Worker.java:185:	Avoid variables with short names like a
+src/vash/Worker.java:185:	Local variable 'a' could be declared final
+src/vash/Worker.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:186:	Avoid variables with short names like b
+src/vash/Worker.java:186:	Local variable 'b' could be declared final
+src/vash/Worker.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:191:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:191:	System.out.println is used
+src/vash/Worker.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:192:	System.out.println is used
+src/vash/Worker.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/vash/Worker.java:193:	System.out.println is used
+src/vash/Worker.java:200:	Local variable 'lblNewFromDate' could be declared final
+src/vash/Worker.java:205:	Local variable 'label_1' could be declared final
+src/vash/Worker.java:205:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_1' is not final.
+src/vash/Worker.java:205:	The String literal "Day" appears 4 times in this file; the first occurrence is on line 205
+src/vash/Worker.java:210:	Local variable 'label_2' could be declared final
+src/vash/Worker.java:210:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_2' is not final.
+src/vash/Worker.java:210:	The String literal "Month" appears 4 times in this file; the first occurrence is on line 210
+src/vash/Worker.java:215:	Local variable 'label_3' could be declared final
+src/vash/Worker.java:215:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_3' is not final.
+src/vash/Worker.java:215:	The String literal "Year" appears 4 times in this file; the first occurrence is on line 215
+src/vash/Worker.java:220:	Local variable 'lblNewToDate' could be declared final
+src/vash/Worker.java:225:	Local variable 'label_5' could be declared final
+src/vash/Worker.java:225:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_5' is not final.
+src/vash/Worker.java:230:	Local variable 'label_6' could be declared final
+src/vash/Worker.java:230:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_6' is not final.
+src/vash/Worker.java:235:	Local variable 'label_7' could be declared final
+src/vash/Worker.java:235:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_7' is not final.
+src/vash/Worker.java:240:	Local variable 'label' could be declared final
+src/vash/Worker.java:245:	Local variable 'label_4' could be declared final
+src/vash/Worker.java:245:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_4' is not final.
+src/vash/Worker.java:250:	Local variable 'label_8' could be declared final
+src/vash/Worker.java:250:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_8' is not final.
+src/vash/Worker.java:255:	Local variable 'label_9' could be declared final
+src/vash/Worker.java:255:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_9' is not final.
+src/vash/Worker.java:260:	Local variable 'label_10' could be declared final
+src/vash/Worker.java:260:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_10' is not final.
+src/vash/Worker.java:265:	Local variable 'label_11' could be declared final
+src/vash/Worker.java:265:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'label_11' is not final.
+src/vash/Worker.java:270:	Avoid excessively long variable names like lblModifyReservation
+src/vash/Worker.java:270:	Local variable 'lblModifyReservation' could be declared final
+src/vash/Worker.java:275:	Avoid excessively long variable names like lblLatestReservation
+src/vash/Worker.java:275:	Local variable 'lblLatestReservation' could be declared final
+src/vash/table_offers.java:3:	Avoid unused imports such as 'java.awt.BorderLayout'
+src/vash/table_offers.java:5:	Avoid duplicate imports such as 'java.sql.DriverManager'
+src/vash/table_offers.java:6:	Avoid duplicate imports such as 'java.sql.ResultSet'
+src/vash/table_offers.java:7:	Avoid duplicate imports such as 'java.sql.SQLException'
+src/vash/table_offers.java:19:	Class names should begin with an uppercase character
+src/vash/table_offers.java:19:	headerCommentRequirement Required
+src/vash/table_offers.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/table_offers.java:21:	Perhaps 'contentPane' could be replaced by a local variable.
+src/vash/table_offers.java:21:	Private field 'contentPane' could be made final; it is only initialized in the declaration or constructor.
+src/vash/table_offers.java:21:	fieldCommentRequirement Required
+src/vash/table_offers.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/table_offers.java:22:	Perhaps 'table' could be replaced by a local variable.
+src/vash/table_offers.java:22:	Private field 'table' could be made final; it is only initialized in the declaration or constructor.
+src/vash/table_offers.java:22:	fieldCommentRequirement Required
+src/vash/table_offers.java:23:	Avoid unused private fields such as 'btnSeeOffers'.
+src/vash/table_offers.java:23:	fieldCommentRequirement Required
+src/vash/table_offers.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/vash/table_offers.java:24:	Perhaps 'btnClose' could be replaced by a local variable.
+src/vash/table_offers.java:24:	Private field 'btnClose' could be made final; it is only initialized in the declaration or constructor.
+src/vash/table_offers.java:24:	fieldCommentRequirement Required
+src/vash/table_offers.java:29:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/vash/table_offers.java:29:	Parameter 'args' is not assigned and could be declared final
+src/vash/table_offers.java:31:	To be compliant to J2EE, a webapp should not use any thread.
+src/vash/table_offers.java:32:	publicMethodCommentRequirement Required
+src/vash/table_offers.java:34:	Local variable 'frame' could be declared final
+src/vash/table_offers.java:36:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vash/table_offers.java:37:	Avoid printStackTrace(); use a logger call instead.
+src/vash/table_offers.java:46:	It is a good practice to call super() in a constructor
+src/vash/table_offers.java:54:	Local variable 'scrollPane' could be declared final
+src/vash/table_offers.java:80:	Avoid variables with short names like e
+src/vash/table_offers.java:80:	Parameter 'e' is not assigned and could be declared final
+src/vash/table_offers.java:80:	publicMethodCommentRequirement Required
+src/vash/table_offers.java:89:	Local variable 'url' could be declared final
+src/vash/table_offers.java:90:	Local variable 'name' could be declared final
+src/vash/table_offers.java:91:	Local variable 'password' could be declared final
+src/vash/table_offers.java:93:	Ensure that resources like this java.sql.Connection object are closed after use
+src/vash/table_offers.java:93:	Local variable 'con' could be declared final
+src/vash/table_offers.java:93:	Unnecessary use of fully qualified name 'java.sql.Connection' due to existing import 'java.sql.*'
+src/vash/table_offers.java:94:	Ensure that resources like this java.sql.Statement object are closed after use
+src/vash/table_offers.java:94:	Found 'DD'-anomaly for variable 'stmts' (lines '94'-'96').
+src/vash/table_offers.java:94:	Unnecessary use of fully qualified name 'java.sql.Statement' due to existing import 'java.sql.*'
+src/vash/table_offers.java:95:	Local variable 'query' could be declared final
+src/vash/table_offers.java:97:	Avoid variables with short names like rs
+src/vash/table_offers.java:97:	Ensure that resources like this ResultSet object are closed after use
+src/vash/table_offers.java:97:	Local variable 'rs' could be declared final
+src/vash/table_offers.java:98:	Found 'DU'-anomaly for variable 'li_row' (lines '98'-'115').
+src/vash/table_offers.java:98:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'li_row' is not final.
+src/vash/table_offers.java:108:	Found 'DU'-anomaly for variable 'li_row' (lines '108'-'115').
+src/vash/table_offers.java:111:	Avoid printStackTrace(); use a logger call instead.
+src/vash/table_offers.java:114:	Avoid printStackTrace(); use a logger call instead.

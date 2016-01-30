@@ -1,0 +1,852 @@
+package vash;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JComboBox;
+import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.awt.event.ActionEvent;
+
+public class Statistics extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Statistics frame = new Statistics();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Statistics() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 580, 500);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblSelectMonth = new JLabel("Select Month:");
+		lblSelectMonth.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblSelectMonth.setBounds(10, 24, 95, 14);
+		contentPane.add(lblSelectMonth);
+		
+		JLabel lblNewLabel = new JLabel("Available Rooms");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel.setBounds(10, 149, 117, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("1-bed:");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(10, 201, 46, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("2-bed:");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_2.setBounds(10, 228, 46, 14);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("4-bed:");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_3.setBounds(10, 253, 46, 14);
+		contentPane.add(lblNewLabel_3);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField.setBounds(61, 198, 44, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_1.setBounds(61, 225, 44, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_2.setBounds(61, 250, 44, 20);
+		contentPane.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JLabel lblNewLabel_4 = new JLabel("Reserved Rooms");
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_4.setBounds(331, 149, 127, 14);
+		contentPane.add(lblNewLabel_4);
+		
+		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_3.setBounds(387, 195, 44, 20);
+		contentPane.add(textField_3);
+		textField_3.setColumns(10);
+		
+		JLabel lblNewLabel_5 = new JLabel("1-bed:");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_5.setBounds(331, 198, 46, 14);
+		contentPane.add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("2-bed:");
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_6.setBounds(331, 225, 46, 14);
+		contentPane.add(lblNewLabel_6);
+		
+		JLabel lblNewLabel_7 = new JLabel("4-bed:");
+		lblNewLabel_7.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_7.setBounds(331, 250, 46, 14);
+		contentPane.add(lblNewLabel_7);
+		
+		textField_4 = new JTextField();
+		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_4.setBounds(387, 222, 44, 20);
+		contentPane.add(textField_4);
+		textField_4.setColumns(10);
+		
+		textField_5 = new JTextField();
+		textField_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_5.setBounds(387, 247, 46, 20);
+		contentPane.add(textField_5);
+		textField_5.setColumns(10);
+		
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}));
+		comboBox_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		comboBox_1.setBounds(124, 22, 95, 20);
+		contentPane.add(comboBox_1);
+		
+		JLabel lblProfit = new JLabel("Profit:");
+		lblProfit.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblProfit.setBounds(146, 321, 46, 14);
+		contentPane.add(lblProfit);
+		
+		textField_6 = new JTextField();
+		textField_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		textField_6.setBounds(217, 318, 86, 20);
+		contentPane.add(textField_6);
+		textField_6.setColumns(10);
+		
+		JButton btnNewButton_1 = new JButton("Log Out");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Log Out");
+            	Login a = new Login();
+				a.setVisible(true);
+				setVisible(false); //you can't see me!
+				dispose(); //Destroy the JFrame object
+			}
+		});
+		btnNewButton_1.setBounds(465, 69, 89, 23);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton = new JButton("Back");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Back");
+            	Admin a = new Admin();
+				a.setVisible(true);
+				setVisible(false); //you can't see me!
+				dispose(); //Destroy the JFrame object
+			}
+		});
+		btnNewButton.setBounds(465, 22, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JButton btnGo = new JButton("Go");
+		btnGo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+        		textField_2.setText("");
+        		textField_1.setText("");
+        		textField.setText("");
+        		textField_3.setText("");
+        		textField_4.setText("");
+        		textField_5.setText("");
+        		textField_6.setText("");
+				Connection conn = null;
+				 PreparedStatement ps,ps1;
+				 
+				 
+				try {					
+				    conn =
+				       DriverManager.getConnection("jdbc:mysql://localhost/mhx_log?"+"user=root&password=");
+				    ps = conn.prepareStatement("SELECT start_date,type_room from rooms where name_reservation is null");
+				    ps1 = conn.prepareStatement("SELECT start_date,type_room,price from rooms where name_reservation is not null");
+		            ResultSet result = ps.executeQuery();
+		            int ian=0;
+		            int fev=0;
+		            int mar=0;
+		            int apr=0;
+		            int mai=0;
+		            int ioun=0;
+		            int ioul=0;
+		            int ayg=0;
+		            int sep=0;
+		            int oct=0;
+		            int noe=0;
+		            int dec=0;
+		            while(result.next()){	
+		            	
+		            	//System.out.println(result.getString("start_date"));
+		            	//System.out.println("aaa"+result1.getString("start_date"));
+		            	String string = result.getString("start_date");
+		            	//String string1 = result1.getString("start_date");
+		            	String rooms = result.getString("type_room");
+		            	//String rooms1 = result1.getString("type_room");
+		        		String[] parts = string.split("-");		     
+		        		String part2 = parts[1];
+		        		//String[] parts1 = string1.split("-");		     
+		        		//String part12 = parts1[1];
+		        		String x=comboBox_1.getSelectedItem().toString();
+					        		if(x.equals("January")){
+					        			x="01";
+					        		}
+					        		else if(x.equals("February")){
+					        			x="02";
+					        		}
+					        		else if(x.equals("March")){
+					        			x="03";
+					        		}
+					        		else if(x.equals("April")){
+					        			x="04";
+					        		}
+					        		else if(x.equals("May")){
+					        			x="05";
+					        		}
+					        		else if(x.equals("June")){
+					        			x="06";
+					        		}
+					        		else if(x.equals("July")){
+					        			x="07";
+					        		}
+					        		else if(x.equals("August")){
+					        			x="08";
+					        		}
+					        		else if(x.equals("September")){
+					        			x="09";
+					        		}
+					        		else if(x.equals("October")){
+					        			x="10";
+					        		}
+					        		else if(x.equals("November")){
+					        			x="11";
+					        		}
+					        		else if(x.equals("December")){
+					        			x="12";
+					        		}
+
+		        		if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				ian++;
+				        		textField.setText(String.valueOf(ian));
+				        		ian=0;
+					            }
+		        			else if(rooms.equals("2")){
+		        				ian++;
+				        		textField_1.setText(String.valueOf(ian));
+				        		ian=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				ian++;
+				        		textField_2.setText(String.valueOf(ian));
+				        		ian=0;
+					            }
+		        			
+
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				fev++;
+				        		textField.setText(String.valueOf(fev));
+				        		fev=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				fev++;
+				        		textField_1.setText(String.valueOf(fev));
+				        		fev=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				fev++;
+				        		textField_2.setText(String.valueOf(fev));
+				        		fev=0;
+					            }
+		        			
+
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        		
+		        			if(rooms.equals("1")){
+		        				mar++;
+				        		textField.setText(String.valueOf(mar));
+				        		mar=0;
+					            }
+		        			else if(rooms.equals("2")){
+		        				mar++;
+				        		textField_1.setText(String.valueOf(mar));
+				        		mar=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				mar++;
+				        		textField_2.setText(String.valueOf(mar));
+				        		mar=0;
+					            }
+
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				apr++;
+				        		textField.setText(String.valueOf(apr));
+				        		apr=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				apr++;
+				        		textField_1.setText(String.valueOf(apr));
+				        		apr=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				apr++;
+				        		textField_2.setText(String.valueOf(apr));
+				        		apr=0;
+					            }
+		        			
+
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				mai++;
+				        		textField.setText(String.valueOf(mai));
+				        		mai=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				mai++;
+				        		textField_1.setText(String.valueOf(mai));
+				        		mai=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				mai++;
+				        		textField_2.setText(String.valueOf(mai));
+				        		mai=0;
+					            }
+		        			
+
+		        			
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				ioun++;
+				        		textField.setText(String.valueOf(ioun));
+				        		ioun=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				ioun++;
+				        		textField_1.setText(String.valueOf(ioun));
+				        		ioun=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				ioun++;
+				        		textField_2.setText(String.valueOf(ioun));
+				        		ioun=0;
+					            }
+		        			
+		        			
+
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				ioul++;
+				        		textField.setText(String.valueOf(ioul));
+				        		ioul=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				ioul++;
+				        		textField_1.setText(String.valueOf(ioul));
+				        		ioul=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				ioul++;
+				        		textField_2.setText(String.valueOf(ioul));
+				        		ioul=0;
+					            }
+		        			
+		        			
+
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				ayg++;
+				        		textField.setText(String.valueOf(ayg));
+				        		ayg=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				ayg++;
+				        		textField_1.setText(String.valueOf(ayg));
+				        		ayg=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				ayg++;
+				        		textField_2.setText(String.valueOf(ayg));
+				        		ayg=0;
+					            }
+		        			
+		        			
+
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				sep++;
+				        		textField.setText(String.valueOf(sep));
+				        		sep=0;
+					            }
+		        			else if(rooms.equals("2")){
+		        				sep++;
+				        		textField_1.setText(String.valueOf(sep));
+				        		sep=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				sep++;
+				        		textField_2.setText(String.valueOf(sep));
+				        		sep=0;
+					            }
+		        			
+
+		        				
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				oct++;
+				        		textField.setText(String.valueOf(oct));
+				        		oct=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				oct++;
+				        		textField_1.setText(String.valueOf(oct));
+				        		oct=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				oct++;
+				        		textField_2.setText(String.valueOf(oct));
+				        		oct=0;
+					            }
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				noe++;
+				        		textField.setText(String.valueOf(noe));
+				        		noe=0;
+					            }
+		        			else if(rooms.equals("2")){
+		        				noe++;
+				        		textField_1.setText(String.valueOf(noe));
+				        		noe=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				noe++;
+				        		textField_2.setText(String.valueOf(noe));
+				        		noe=0;
+					            }
+		        			
+
+		        			
+		        			
+		        			
+		        		}
+		        		else if(part2.equals(x)){
+		        			
+		        			if(rooms.equals("1")){
+		        				dec++;
+				        		textField.setText(String.valueOf(dec));
+				        		dec=0;
+					            }	
+		        			else if(rooms.equals("2")){
+		        				dec++;
+				        		textField_1.setText(String.valueOf(dec));
+				        		dec=0;
+					            }
+		        			else if(rooms.equals("4")){
+		        				dec++;
+				        		textField_2.setText(String.valueOf(dec));
+				        		dec=0;
+					            }		        		
+		        		}}						
+	//----------------------------------------------------------------------	        			
+		            ResultSet result1 = ps1.executeQuery();	
+		            int y=0;
+		            while(result1.next()){	
+		            			  int x1 = Integer.parseInt(result1.getString("price"));
+		            			
+				            	String string1 = result1.getString("start_date");				            	
+				            	String rooms1 = result1.getString("type_room");
+				        		String[] parts1 = string1.split("-");		     
+				        		String part12 = parts1[1];
+				        		String x=comboBox_1.getSelectedItem().toString();
+				        		
+				        		
+				        		if(x.equals("January")){
+				        			x="01";
+				        		}
+				        		else if(x.equals("February")){
+				        			x="02";
+				        		}
+				        		else if(x.equals("March")){
+				        			x="03";
+				        		}
+				        		else if(x.equals("April")){
+				        			x="04";
+				        		}
+				        		else if(x.equals("May")){
+				        			x="05";
+				        		}
+				        		else if(x.equals("June")){
+				        			x="06";
+				        		}
+				        		else if(x.equals("July")){
+				        			x="07";
+				        		}
+				        		else if(x.equals("August")){
+				        			x="08";
+				        		}
+				        		else if(x.equals("September")){
+				        			x="09";
+				        		}
+				        		else if(x.equals("October")){
+				        			x="10";
+				        		}
+				        		else if(x.equals("November")){
+				        			x="11";
+				        		}
+				        		else if(x.equals("December")){
+				        			x="12";
+				        		}
+
+				        		if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				ian++;
+						        		textField_3.setText(String.valueOf(ian));
+						        		ian=0;
+							            }
+				        			else if(rooms1.equals("2")){
+				        				ian++;
+				        				textField_4.setText(String.valueOf(ian));
+						        		ian=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				ian++;
+						        		textField_5.setText(String.valueOf(ian));
+						        		ian=0;
+							            }
+				        			y=y+x1;
+			            			  textField_6.setText(String.valueOf(y));
+
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				fev++;
+				        				textField_3.setText(String.valueOf(fev));
+						        		fev=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				fev++;
+						        		textField_4.setText(String.valueOf(fev));
+						        		fev=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				fev++;
+						        		textField_5.setText(String.valueOf(fev));
+						        		fev=0;
+							            }
+				        			
+
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        		
+				        			if(rooms1.equals("1")){
+				        				mar++;
+				        				textField_3.setText(String.valueOf(mar));
+						        		mar=0;
+							            }
+				        			else if(rooms1.equals("2")){
+				        				mar++;
+						        		textField_4.setText(String.valueOf(mar));
+						        		mar=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				mar++;
+						        		textField_5.setText(String.valueOf(mar));
+						        		mar=0;
+							            }
+
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				apr++;
+				        				textField_3.setText(String.valueOf(apr));
+						        		apr=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				apr++;
+						        		textField_4.setText(String.valueOf(apr));
+						        		apr=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				apr++;
+						        		textField_5.setText(String.valueOf(apr));
+						        		apr=0;
+							            }
+				        			
+
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				mai++;
+				        				textField_3.setText(String.valueOf(mai));
+						        		mai=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				mai++;
+						        		textField_4.setText(String.valueOf(mai));
+						        		mai=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				mai++;
+						        		textField_5.setText(String.valueOf(mai));
+						        		mai=0;
+							            }
+				        			
+
+				        			
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				ioun++;
+				        				textField_3.setText(String.valueOf(ioun));
+						        		ioun=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				ioun++;
+						        		textField_4.setText(String.valueOf(ioun));
+						        		ioun=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				ioun++;
+						        		textField_5.setText(String.valueOf(ioun));
+						        		ioun=0;
+							            }
+				        			
+				        			
+
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				ioul++;
+				        				textField_3.setText(String.valueOf(ioul));
+						        		ioul=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				ioul++;
+						        		textField_4.setText(String.valueOf(ioul));
+						        		ioul=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				ioul++;
+						        		textField_5.setText(String.valueOf(ioul));
+						        		ioul=0;
+							            }
+				        			
+				        			
+
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				ayg++;
+				        				textField_3.setText(String.valueOf(ayg));
+						        		ayg=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				ayg++;
+						        		textField_4.setText(String.valueOf(ayg));
+						        		ayg=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				ayg++;
+						        		textField_5.setText(String.valueOf(ayg));
+						        		ayg=0;
+							            }
+				        			
+				        			
+
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				sep++;
+				        				textField_3.setText(String.valueOf(sep));
+						        		sep=0;
+							            }
+				        			else if(rooms1.equals("2")){
+				        				sep++;
+						        		textField_4.setText(String.valueOf(sep));
+						        		sep=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				sep++;
+						        		textField_5.setText(String.valueOf(sep));
+						        		sep=0;
+							            }
+				        			
+
+				        				
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				oct++;
+				        				textField_3.setText(String.valueOf(oct));
+						        		oct=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				oct++;
+						        		textField_4.setText(String.valueOf(oct));
+						        		oct=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				oct++;
+						        		textField_5.setText(String.valueOf(oct));
+						        		oct=0;
+							            }
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				noe++;
+				        				textField_3.setText(String.valueOf(noe));
+						        		noe=0;
+							            }
+				        			else if(rooms1.equals("2")){
+				        				noe++;
+						        		textField_4.setText(String.valueOf(noe));
+						        		noe=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				noe++;
+						        		textField_5.setText(String.valueOf(noe));
+						        		noe=0;
+							            }
+				        			
+
+				        			
+				        			
+				        			
+				        		}
+				        		else if(part12.equals(x)){
+				        			
+				        			if(rooms1.equals("1")){
+				        				dec++;
+				        				textField_3.setText(String.valueOf(dec));
+						        		dec=0;
+							            }	
+				        			else if(rooms1.equals("2")){
+				        				dec++;
+						        		textField_4.setText(String.valueOf(dec));
+						        		dec=0;
+							            }
+				        			else if(rooms1.equals("4")){
+				        				dec++;
+						        		textField_5.setText(String.valueOf(dec));
+						        		dec=0;
+							            }	        			
+			        		
+				        		}
+		        		}	            		   
+
+		         
+				} catch (SQLException ex) {
+				    System.out.println("SQLException: " + ex.getMessage());
+				    System.out.println("SQLState: " + ex.getSQLState());
+				    System.out.println("VendorError: " + ex.getErrorCode());
+				}
+				
+				
+			}
+				
+			
+		});
+		btnGo.setBounds(251, 22, 56, 23);
+		contentPane.add(btnGo);
+	}}
+
