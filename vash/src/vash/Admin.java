@@ -1,5 +1,6 @@
 package vash;
-//----
+
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.sql.*;
@@ -7,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JSpinner;
 import javax.swing.JButton;
@@ -66,40 +68,10 @@ public class Admin extends JFrame {
 		lblSelectFromDate.setBounds(9, 83, 125, 14);
 		contentPane.add(lblSelectFromDate);
 		
-		JLabel lblDay = new JLabel("Day");
-		lblDay.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblDay.setBounds(10, 117, 46, 14);
-		contentPane.add(lblDay);
-		
-		JLabel lblMonth = new JLabel("Month");
-		lblMonth.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblMonth.setBounds(49, 117, 46, 14);
-		contentPane.add(lblMonth);
-		
-		JLabel lblYear = new JLabel("Year");
-		lblYear.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblYear.setBounds(90, 117, 46, 14);
-		contentPane.add(lblYear);
-		
 		JLabel lblSelectToDate = new JLabel("Select To Date");
 		lblSelectToDate.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblSelectToDate.setBounds(292, 83, 128, 14);
 		contentPane.add(lblSelectToDate);
-		
-		JLabel label_1 = new JLabel("Day");
-		label_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label_1.setBounds(292, 117, 46, 14);
-		contentPane.add(label_1);
-		
-		JLabel label_2 = new JLabel("Month");
-		label_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label_2.setBounds(339, 117, 46, 14);
-		contentPane.add(label_2);
-		
-		JLabel label_3 = new JLabel("Year");
-		label_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label_3.setBounds(380, 117, 46, 14);
-		contentPane.add(label_3);
 		
 		JLabel lblEnterPrice = new JLabel("Enter Price Offer");
 		lblEnterPrice.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -127,10 +99,12 @@ public class Admin extends JFrame {
 			      preparedStmt.setString(5, textField_1.getText());
 			      // execute the java preparedstatement
 			      preparedStmt.executeUpdate();
+			      JOptionPane.showMessageDialog(null, "Offer created!!");
 			      conn.close();
 			    }
 			    catch (Exception e1)
 			    {
+			    	JOptionPane.showMessageDialog(null, "eg. Date: 2017-01-01");
 			      System.err.println("Got an exception! ");
 			      System.err.println(e1.getMessage());
 			    }	
@@ -161,6 +135,7 @@ public class Admin extends JFrame {
 			      //preparedStmt.setString(5, textField_1.getText());
 			      // execute the java preparedstatement
 			      preparedStmt.execute();
+			      JOptionPane.showMessageDialog(null, "Offer deleted!!");
 			      conn.close();
 			    }
 			    catch (Exception e1)
@@ -229,5 +204,35 @@ public class Admin extends JFrame {
 		textField_2.setColumns(10);
 		textField_2.setBounds(10, 218, 86, 20);
 		contentPane.add(textField_2);
+		
+		JLabel label_1 = new JLabel("Year");
+		label_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_1.setBounds(10, 120, 46, 14);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("Month");
+		label_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_2.setBounds(62, 120, 46, 14);
+		contentPane.add(label_2);
+		
+		JLabel label_3 = new JLabel("Day");
+		label_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_3.setBounds(118, 120, 46, 14);
+		contentPane.add(label_3);
+		
+		JLabel label_4 = new JLabel("Year");
+		label_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_4.setBounds(292, 120, 46, 14);
+		contentPane.add(label_4);
+		
+		JLabel label_5 = new JLabel("Month");
+		label_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_5.setBounds(344, 120, 46, 14);
+		contentPane.add(label_5);
+		
+		JLabel label_6 = new JLabel("Day");
+		label_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_6.setBounds(400, 120, 46, 14);
+		contentPane.add(label_6);
 	}
 }
